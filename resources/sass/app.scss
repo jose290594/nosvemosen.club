@@ -1,0 +1,40 @@
+// Fontshttps://fonts.googleapis.com/css?family=Roboto&display=swap
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+// Variables
+@import 'variables';
+
+*,*:before,*:after { -webkit-box-sizing: border-box; box-sizing: inherit; }
+* { font-family: 'Oswald', sans-serif;}
+html { -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 100%; }
+.cover { width: 100%; height: 100%;}
+body { background: #fdfdfd; margin:0!important ;width: 100%; height: 100%;}
+$time: 300ms;
+$menu_width: 160px;
+#app{
+  width: 100%; height: 100%;
+}
+$primary:#eb1d25;
+$seccondary:#6e0d10;
+$black:#050000;
+$otro:#420709;
+$blanco:#f7f7f7;
+@media only screen and (max-width: 600px) {
+    html {
+     font-size:80%;
+    }
+  }
+.yellow-container{
+    height: 80vh;
+    width: 100%;
+    background-color: $black;
+    position:absolute;
+}
+.center {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+.column {
+  flex-direction: column;
+}

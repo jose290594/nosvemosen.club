@@ -1,0 +1,139 @@
+.mediaViewInfo {
+  --web-view-name          : Web 1920 – 1;
+  --web-view-id            : Web_1920___1;
+  --web-enable-deep-linking: true;
+}
+
+:root {
+  --web-view-ids: Web_1920___1;
+}
+
+* {
+  margin : 0;
+  padding: 0;
+}
+
+
+
+#Bienvenidos {
+  overflow     : visible;
+  width        : 100%;
+  font-size    : 6rem;
+  color        : rgba(255, 255, 255, 1);
+  z-index      : 9999;
+  filter       : brightness(100%);
+
+  span {
+
+    max-width : 700px;
+    max-height: 100px;
+  }
+}
+
+.img {
+  background-size : cover;
+  background-image: url('dubai_33972181_1920_A0_Path_2_pattern.png');
+  filter          : brightness(55%);
+  width           : 100%;
+  height          : 100vh;
+  position        : absolute;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  left            : 0;
+}
+
+#Web_1920___1 {
+
+  position  : relative;
+  box-sizing: border-box;
+  width     : 100%;
+  height    : 100vh;
+
+  overflow                 : hidden;
+  margin                   : 0;
+  padding                  : 0;
+
+}
+.log{
+  margin-bottom:10vh!important
+}
+.login-box {
+  height          : 40vh;
+  width           : 30vw;
+  min-width: 300px;
+  min-height: 250px;
+  position:relative;
+  background-color: white;
+  z-index         : 999;
+  border-radius: 1em;
+  a{
+    color:black;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif !important;
+    margin:3vh 0;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+  button{
+    color:white;
+    padding: 0.6rem;
+    border:none;
+    font-family: 'Roboto', sans-serif !important;
+    background: black;
+    &:hover{
+      background: rgb(66, 66, 66);
+    }
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  .login-wrapper {
+
+    label {
+
+      font-family: 'Roboto', sans-serif !important;
+    }
+
+    input {
+      font-family  : 'Roboto', sans-serif !important;
+      padding      : 1.5vh;
+      border       : 0;
+      background   : white;
+      border-bottom: 2px gray solid;
+      
+      &:focus {
+        background: #f3eaca;
+      }
+    }
+  }
+}
+
+
+
+.center {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-side {
+    align-items: flex-start !important;
+    margin-top : 2vh;
+
+    &:nth-child(0) {
+      margin-bottom: 2vh;
+    }
+
+    &:nth-child(1) {}
+  }
+}
+
+.row {
+  flex-direction: column;
+}

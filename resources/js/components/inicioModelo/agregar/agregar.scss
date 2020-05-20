@@ -1,0 +1,21 @@
+.caja{
+    background: rgba(0, 0, 0, 0.253);
+    z-index:99999;
+    position: absolute;
+   
+    .mensaje{
+        z-index:999;
+        width:50vw;
+        position:relative;
+        height:50vh;
+        background-color: aliceblue;
+    }
+}
+
+
+.draag-text{
+    pointer-events: none;
+    position:absolute;
+    z-index:3;
+    align-items: end!important;
+}

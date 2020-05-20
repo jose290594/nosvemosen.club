@@ -1,0 +1,138 @@
+.mediaViewInfo {
+  --web-view-name          : Web 1920 – 1;
+  --web-view-id            : Web_1920___1;
+  --web-enable-deep-linking: true;
+}
+
+:root {
+  --web-view-ids: Web_1920___1;
+}
+
+* {
+  margin : 0;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #Bienvenidos {
+    font-size: 4.5rem !important;
+  }
+  .link-wrapper {
+   a{
+     padding: 0.6rem 1rem!important;
+     border-radius: 2rem!important;
+    margin-top:3vh!important;
+  
+   }
+  }
+}
+
+#Bienvenidos {
+  overflow: visible;
+  width   : 100%;
+
+  text-align : left;
+  font-size  : 6rem;
+  color      : rgba(255, 255, 255, 1);
+  z-index    : 9999;
+  filter     : brightness(100%);
+
+  span {
+
+    max-width : 700px;
+    max-height: 100px;
+  }
+}
+
+._Lorem_ipsum_dolor_sit_amet__c {
+  min-height: 300px;
+  width      : 80vw;
+  line-height: 36px;
+  font-size  : 2.8vh;
+  color      : rgba(255, 255, 255, 1);
+  z-index    : 9999;
+}
+
+.separate {
+  justify-content: space-around;
+  width          : 80vw;
+}
+
+#Web_1920___1 {
+
+  position  : relative;
+  box-sizing: border-box;
+  width     : 100%;
+  height    : 100vh;
+
+  overflow                 : hidden;
+  margin                   : 0;
+  padding                  : 0;
+  --web-view-name          : Web 1920 – 1;
+  --web-view-id            : Web_1920___1;
+  --web-enable-deep-linking: true;
+
+  .link-wrapper {
+    z-index:99999;
+    width      : 80vw;
+   height     : 5vh;
+   align-content: space-around;
+   justify-content: space-around;
+   a{
+     color:black;
+     text-decoration:none;
+     background-color: white;
+     padding: 1rem 4rem;
+     border-radius: 2rem;
+     font-family:'Roboto', sans-serif!important;
+     &:hover{
+      background-color: rgb(197, 193, 193);
+     }
+   }
+  }
+}
+
+.img {
+  background-size : cover;
+  background-image: url('dubai_33972181_1920_A0_Path_2_pattern.png');
+  filter          : brightness(55%);
+  width           : 100%;
+  height          : 100vh;
+  position        : absolute;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  left            : 0;
+}
+.row {
+  flex-direction: column;
+}
+.logo-container-inicio{
+  height: 0;
+    width: 35vw;
+    min-width: 300px;
+    flex-grow: 2;
+    position: relative;
+    padding-top: 15%;
+  &>.logo-inicio{
+      position:absolute;
+      top:0;
+      width: 100%;
+      right:0;
+      bottom:0;
+      left:0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('punto.png');
+  }
+}
+
+
+//buttons
+
+/*
+      This is the outer svg wrapper that the SVG itself will 
+      fill. Multiple svg-wrapper classes can be put side by side.
+  */

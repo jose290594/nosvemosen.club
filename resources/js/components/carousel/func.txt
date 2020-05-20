@@ -1,0 +1,118 @@
+  const len = this.state.imgs.length;
+        let muestra = this.state.display;
+        let place = this.state.place;
+        switch (this.state.place) {
+            case 0:
+                left.classList.remove("left");
+                left.classList.add("right");
+                right.classList.remove("right");
+                right.classList.add("center");
+                center.classList.remove("center");
+                center.classList.add("left");
+                if(len <= muestra){
+                    place = (place === 0) ? 2 : place-1;
+                    console.log(this.state.place);
+                     this.setState({ place: place,img1:this.state.imgs[0] ,display:1});
+                }else{
+                      place = (place === 0) ? 2 : place-1;
+                     console.log(this.state.place);
+                    this.setState({ place: place,img1:this.state.imgs[muestra] ,display:muestra+1}); 
+                    
+                }
+               
+                break;
+            case 1:
+                left.classList.remove("right");
+                left.classList.add("center");
+                right.classList.remove("center");
+                right.classList.add("left");
+                center.classList.remove("left");
+                center.classList.add("right");
+                if(len <= muestra){
+                    console.log(this.state.place);
+                    place = (place === 0) ? 2 : place-1;
+                    
+                    this.setState({ place: place,img2:this.state.imgs[0] ,display:1});
+               }else{
+                console.log(this.state.place);
+               place = (place === 0) ? 2 : place-1;
+                   this.setState({ place: place,img2:this.state.imgs[muestra] ,display:muestra+1});
+               }
+                break;
+            case 2:
+                left.classList.remove("center");
+                left.classList.add("left");
+                right.classList.remove("left");
+                right.classList.add("right");
+                center.classList.remove("right");
+                center.classList.add("center");
+                if(len <= muestra){
+                     console.log(this.state.place);
+                    place = (place === 0) ? 2 : place-1;
+                    this.setState({ place: place,img3:this.state.imgs[0] ,display:1});
+               }else{
+                    console.log(this.state.place);
+                place = (place === 0) ? 2 : place-1;
+                   this.setState({ place: place,img3:this.state.imgs[muestra] ,display:muestra+1});
+               }
+                break;
+        }
+
+
+ /*moveRight = () => {
+        let right = this.card1.current;
+        let center = this.card2.current;
+        let left = this.card3.current; 
+        const len = this.state.imgs.length;
+        let muestra = this.state.display;
+        switch (this.state.place) {
+            case 0:
+                left.classList.remove("left");
+                left.classList.add("center");
+                right.classList.remove("right");
+                right.classList.add("left");
+                center.classList.remove("center");
+                center.classList.add("right");
+               
+                if(len <= muestra){
+                     this.setState({ place: 1,img1:this.state.imgs[0] ,display:1});
+                }else{
+                     console.log(muestra,this.state.place);
+                    this.setState({ place: 1,img1:this.state.imgs[muestra] ,display:muestra+1});
+                   
+                }
+               
+                break;
+            case 1:
+                left.classList.remove("center");
+                left.classList.add("right");
+                right.classList.remove("left");
+                right.classList.add("center");
+                center.classList.remove("right");
+                center.classList.add("left");
+                if(len <= muestra){
+                    console.log(muestra);
+                    this.setState({ place: 2,img2:this.state.imgs[0] ,display:1});
+               }else{
+                   console.log(muestra);
+                   this.setState({ place: 2,img2:this.state.imgs[muestra] ,display:muestra+1});
+               }
+                break;
+            case 2:
+                left.classList.remove("right");
+                left.classList.add("left");
+                right.classList.remove("center");
+                right.classList.add("right");
+                center.classList.remove("left");
+                center.classList.add("center");
+                if(len <= muestra){
+                    console.log(muestra);
+                    this.setState({ place: 0,img3:this.state.imgs[0] ,display:1});
+               }else{
+                console.log(muestra);
+                   this.setState({ place: 0,img3:this.state.imgs[muestra] ,display:muestra+1});
+               }
+                break;
+        }
+       
+    }*/
